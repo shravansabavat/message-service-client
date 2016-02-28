@@ -41,12 +41,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PallyndromeCheckerService.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PallyndromeCheckerService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/services/PallyndromeCheckerService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13274336">
-              <caret line="4" column="46" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pallyndromeChecker.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/views/pallyndromeChecker.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.26184538">
+              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+              <folding>
+                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,6 +69,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/public/js/services/PallyndromeCheckerService.js" />
+        <option value="$PROJECT_DIR$/public/views/pallyndromeChecker.html" />
       </list>
     </option>
   </component>
@@ -125,6 +139,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pallyndrome-service-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pallyndrome-service-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -303,9 +335,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/services/PallyndromeCheckerService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13274336">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/pallyndromeChecker.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26184538">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
