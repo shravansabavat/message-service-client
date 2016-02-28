@@ -13,6 +13,10 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			controller: 'PallyndromeCheckerController'
 		})
 
-	$locationProvider.html5Mode(true);
+		.when('/pallyndromeDetails', {
+			templateUrl: 'views/pallyndromeDetails.html',
+			controller: 'PallyndromeDetailsController'
+		})
 
+	$locationProvider.html5Mode(true);
 }]);

@@ -1,1 +1,9 @@
-angular.module('sampleApp', ['ngRoute', 'appRoutes', 'MainCtrl', 'PallyndromeCheckerCtrl', 'PallyndromeCheckerService']);
+angular.module('pallyndromeApp', [
+    'ngRoute',
+    'appRoutes',
+    'MainCtrl',
+    'PallyndromeCheckerCtrl',
+    'PallyndromeCheckerService',
+    'PallyndromeDetailsCtrl',
+    'PallyndromeDetailsService'
+]);

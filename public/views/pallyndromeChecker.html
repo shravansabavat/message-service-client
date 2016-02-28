@@ -1,45 +1,59 @@
 <td style="width: 85%; vertical-align: top;">
-	<div style="padding-top: 15px">
-		<!-- Summary goes here -->
-		A simple for to submit the input strings to check if it is a pallyndrome or not.
-		If it is a valid pallyndrome, it gets added to the list on the right, and the list is persisted at the server.
+	<div>
+		A simple application to submit the input strings to check if it is a pallyndrome or not.
+		If it is a valid pallyndrome, it gets added to the list on the right, and the list/pallyndromes are persisted at the server.
 	</div>
-	<div style="padding-bottom: 50px">
+	<div style="padding-bottom: 50px;padding-top: 10px;">
 		<table style="width: 100%">
 			<tbody><tr>
-				<td colspan="2" style="width: 100%; padding-top: 10px;">
+				<td colspan="2" style="width: 100%;">
 					<div class="alert alert-info ng-binding" role="alert"></div>
 				</td>
 			</tr>
 			<tr>
-				<td style="width: 45%; padding-left: 40px; vertical-align: top">
-					<div style="padding-bottom: 20px">
-						<h3>Here you go</h3>
-					</div>
+				<td class="col-md-4">
 					<form name="pallyndromeCheckForm" class="form-horizontal ng-pristine ng-invalid ng-invalid-required" role="form" ng-submit="checkPallyndrome()">
 						<div class="form-group">
-							<label class="col-md-4 control-label">Give input</label>
 							<div class="col-md-5">
-								<input type="text" class="form-control ng-pristine ng-invalid ng-invalid-required" name="pallyndromeStr" ng-model="pallyndromeStr" required="">
+								<input placeholder="Input any string" type="text" style="width:300px" class="form-control ng-pristine ng-invalid ng-invalid-required" name="pallyndromeStr" ng-model="pallyndromeStr" required="">
 								<span ng-show="pallyndromeCheckForm.pallyndromeStr.$error.pallyndromeResult">{{pallyndromeCheckForm.pallyndromeStr.$error.pallyndromeResult}}</span>
 							</div>
 						</div>
 						<div class="form-group">
-							<div style="padding-left: 200px">
+							<div style="padding-left: 128px">
 								<input type="submit" value="Submit" class="btn btn-primary">
 							</div>
 						</div>
 					</form>
 				</td>
-				<td style="vertical-align: top">
+				<td class="col-md-4">
 					<table class="table">
-						<tbody><tr>
+						<tbody>
+						<tr>
 							<th>Pallyndromes</th>
 						</tr>
-						<tr ng-repeat="str in pallyndromes" class="ng-scope">
-							<td class="ng-binding">{{str}}</td>
+						<tr ng-repeat="data in pallyndromes" class="ng-scope">
+							<td class="ng-binding"><a href="#" ng-click="getPallyndromeDetails(data.input)">{{data.input}}</a></td>
 						</tr>
 						</tbody></table>
+				</td>
+				<td class="col-md-4">
+					<div ng-if="hasPallyndromeDetails">
+					<table class="table">
+						<tbody><tr>
+							<th>Pallyndrome Details</th>
+						</tr>
+						<tr class="ng-scope">
+							<td class="ng-binding"><span>Pallyndrome:</span>{{pallyndromeDetails.input}}</td>
+						</tr>
+						<tr class="ng-scope">
+							<td class="ng-binding"><span>Date checked:</span>{{pallyndromeDetails.date}}</td>
+						</tr>
+						<tr class="ng-scope">
+							<td class="ng-binding"><span>Times Checked:</span>{{pallyndromeDetails.pallyndromeCheckedCount}}</td>
+						</tr>
+						</tbody></table>
+					</div>
 				</td>
 			</tr>
 			</tbody></table>

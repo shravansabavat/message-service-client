@@ -16,12 +16,17 @@
 
 	<!-- ANGULAR CUSTOM -->
 	<script src="js/controllers/MainCtrl.js"></script>
+
 	<script src="js/controllers/PallyndromeCheckerCtrl.js"></script>
 	<script src="js/services/PallyndromeCheckerService.js"></script>
+
+	<script src="js/controllers/PallyndromeDetailsCtrl.js"></script>
+	<script src="js/services/PallyndromeDetailsService.js"></script>
+
 	<script src="js/appRoutes.js"></script>
 	<script src="js/app.js"></script>
 </head>
-<body ng-app="sampleApp" ng-controller="MainController">
+<body ng-app="pallyndromeApp" ng-controller="MainController">
 <header class="navbar navbar-static-top" id="top" role="banner">
 
 	<div class="container">
@@ -39,7 +44,7 @@
 		<table style="width: 100%">
 			<tbody>
 			<tr>
-				<td style="width: 15%; vertical-align: top;padding-top: 23px;padding-right: 12px;">
+				<td style="width: 15%; vertical-align: top;padding-right: 12px;">
 					<div class="list-group">
 						<a href="/" class="list-group-item active">Home</a>
 						<a href="/checkPallyndrome" class="list-group-item">Check Pallyndrome</a>

@@ -28,6 +28,14 @@ angular.module('PallyndromeCheckerCtrl', []).controller('PallyndromeCheckerContr
 			.catch(function (err) {
 				console.log(err);
 			})
-	};
+	}
+
+	$scope.getPallyndromeDetails = function (pallyndromeStr) {
+		PallyndromeChecker.getPallyndromeDetails(pallyndromeStr).then(function(details) {
+			console.log(details);
+			$scope.pallyndromeDetails = details;
+			$scope.hasPallyndromeDetails = details && typeof details !== 'undefined';
+		});
+	}
 
 });
