@@ -2,7 +2,7 @@ angular.module('PallyndromeCheckerService', []).factory('PallyndromeChecker', ['
     var PallyndromeChecker = {
         getPallyndromes: function() {
             // $http returns a promise, which has a then function, which also returns a promise
-            return $http.get('http://localhost:8081/pallyndrome/list').then(function (response) {
+            return $http.get('http://52.32.44.47:8081/pallyndrome/list').then(function (response) {
                 console.log(response);
                 return response.data;
             });
@@ -13,7 +13,7 @@ angular.module('PallyndromeCheckerService', []).factory('PallyndromeChecker', ['
             // $http returns a promise, which has a then function, which also returns a promise
             return $http({
                     method  : 'POST',
-                    url     : 'http://localhost:8081/pallyndrome/',
+                    url     : 'http://52.32.44.47:8081/pallyndrome/',
                     data    : {'input': input} // pass in data as strings
                 })
                 .success(function(data) {
