@@ -36,7 +36,7 @@ angular.module('PallyndromeCheckerService', []).factory('PallyndromeChecker', ['
 
         deletePallyndrome: function (pallyndromeStr) {
             // $http returns a promise, which has a then function, which also returns a promise
-            /return $http.delete('http://52.32.44.47:8081/pallyndrome/'+pallyndromeStr).then(function (response) {//return $http.delete('http://localhost:8081/pallyndrome/'+pallyndromeStr).then(function (response) {
+            return $http.delete('http://52.32.44.47:8081/pallyndrome/'+pallyndromeStr).then(function (response) {//return $http.delete('http://localhost:8081/pallyndrome/'+pallyndromeStr).then(function (response) {
                 console.log(response);
                 return response.data;
             });
