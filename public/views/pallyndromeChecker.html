@@ -1,7 +1,7 @@
 <td style="width: 85%; vertical-align: top;">
 	<div>
-		A simple application to submit the input strings to check if it is a pallyndrome or not.
-		If it is a valid pallyndrome, it gets added to the list on the right, and the list/pallyndromes are persisted at the server.
+		A simple application to submit the input strings to check if it is a palindrome or not.
+		If it is a valid palindrome, it gets added to the list on the right, and the list/palindromes are persisted at the server.
 	</div>
 	<div style="padding-bottom: 50px;padding-top: 10px;">
 		<table style="width: 100%">
@@ -31,7 +31,7 @@
 						<table class="table">
 							<tbody>
 							<tr>
-								<th>Pallyndromes</th>
+								<th>Palindromes List</th>
 							</tr>
 							<tr ng-repeat="data in pallyndromes" class="ng-scope">
 								<td class="ng-binding">
@@ -52,10 +52,10 @@
 					<div ng-if="hasPallyndromeDetails">
 					<table class="table">
 						<tbody><tr>
-							<th>Pallyndrome Details</th>
+							<th>Palindrome Details</th>
 						</tr>
 						<tr class="ng-scope">
-							<td class="ng-binding"><span>Pallyndrome:</span>{{pallyndromeDetails.input}}</td>
+							<td class="ng-binding"><span>Palindrome:</span>{{pallyndromeDetails.input}}</td>
 						</tr>
 						<tr class="ng-scope">
 							<td class="ng-binding"><span>Date checked:</span>{{pallyndromeDetails.date}}</td>
