@@ -2,13 +2,14 @@
 	<div style="padding-top: 10px">
 		<div style="padding-bottom: 30px">
 			A simple application which is developed in angular.js running on node server to find out if
-			a given string is pallyndrome or not.<br>
-			This application calls a pallyndrome-service node.js micro service
+			a given string is palindrome or not.<br>
+			This application calls a palindrome-service node.js micro service
 				- which offers
 					<ul>
-						<li>1)GET (list pallyndromes)  		- List existing pallyndromes</li>
-						<li>2)GET (details of a pallyndrome) 	- get details of the pallyndrome.</li>
-						<li>3)POST 							- Check if a given string is pallyndrome, if yes then store it.</li>
+						<li>GET (list palindromes)  		- List existing palindromes</li>
+						<li>GET (details of a palindrome) 	- get details of the palindrome.</li>
+						<li>Delete  						- delete a palindrome.</li>
+						<li>POST 							- Check if a given string is palindrome, if yes then store it.</li>
 					</ul>
 
 		</div>
@@ -22,9 +23,9 @@
 				</div>
 				<div class="panel-body">
 					<ul>
-						<li>Click on the Check Pallyndrome tab opens a new form to input a string</li>
-						<li>On Check Pallyndrome form submission, validates the string on the micro service, stores
-							(if valid) into a valid list of pallyndromes and updates the list on the <b>Check Pallyndrome</b> page</li>
+						<li>Click on the Check palindrome tab opens a new form to input a string</li>
+						<li>On Check palindrome form submission, validates the string on the micro service, stores
+							(if valid) into a valid list of palindromes and updates the list on the <b>Check palindrome</b> page</li>
 					</ul>
 				</div>
 			</div>
