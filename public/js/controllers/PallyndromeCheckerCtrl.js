@@ -12,12 +12,12 @@ angular.module('PallyndromeCheckerCtrl', []).controller('PallyndromeCheckerContr
 
 					if (response.data.pallyndrome === true) {
 						$scope.pallyndromeCheckForm.$setValidity('pallyndromeStr', true, $scope.pallyndromeCheckForm);
-						serverMessage.assign($scope, 'Valid palindrome');
+						serverMessage.assign($scope, '...is a palindrome');
 						$scope.pallyndromeValidityClass = 'pallyndromeValidityClassGreen';
 					}
 					else {
 						$scope.pallyndromeCheckForm.$setValidity('pallyndromeStr', false, $scope.pallyndromeCheckForm);
-						serverMessage.assign($scope, 'Not a palindrome');
+						serverMessage.assign($scope, '...is not a palindrome');
 						$scope.pallyndromeValidityClass = 'pallyndromeValidityClassRed';
 					}
 

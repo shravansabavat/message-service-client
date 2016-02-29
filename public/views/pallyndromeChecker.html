@@ -2,6 +2,7 @@
 	<div>
 		A simple application to submit the input strings to check if it is a palindrome or not.
 		If it is a valid palindrome, it gets added to the list on the right, and the list/palindromes are persisted at the server.
+
 	</div>
 	<div style="padding-bottom: 50px;padding-top: 10px;">
 		<table style="width: 100%">
@@ -16,7 +17,7 @@
 						<div class="form-group">
 							<div class="col-md-5">
 								<input placeholder="Input any string" type="text" style="width:300px" class="form-control ng-pristine ng-invalid ng-invalid-required" name="pallyndromeStr" ng-model="pallyndromeStr" required="">
-								<div style="width: 200px" class="{{pallyndromeValidityClass}}" ng-show="pallyndromeCheckForm.pallyndromeStr.$error.pallyndromeResult">{{pallyndromeCheckForm.pallyndromeStr.$error.pallyndromeResult}}</div>
+								<div style="width: 200px;font-size: 15px;font-weight: 800;" class="{{pallyndromeValidityClass}}" ng-show="pallyndromeCheckForm.pallyndromeStr.$error.pallyndromeResult">{{pallyndromeCheckForm.pallyndromeStr.$error.pallyndromeResult}}</div>
 							</div>
 						</div>
 						<div class="form-group">
