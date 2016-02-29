@@ -3,7 +3,5 @@ angular.module('pallyndromeApp', [
     'appRoutes',
     'MainCtrl',
     'PallyndromeCheckerCtrl',
-    'PallyndromeCheckerService',
-    'PallyndromeDetailsCtrl',
-    'PallyndromeDetailsService'
+    'PallyndromeCheckerService'
 ]);

@@ -11,12 +11,12 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="col-md-4">
+				<td class="col-md-4" style="vertical-align: top">
 					<form name="pallyndromeCheckForm" class="form-horizontal ng-pristine ng-invalid ng-invalid-required" role="form" ng-submit="checkPallyndrome()">
 						<div class="form-group">
 							<div class="col-md-5">
 								<input placeholder="Input any string" type="text" style="width:300px" class="form-control ng-pristine ng-invalid ng-invalid-required" name="pallyndromeStr" ng-model="pallyndromeStr" required="">
-								<span ng-show="pallyndromeCheckForm.pallyndromeStr.$error.pallyndromeResult">{{pallyndromeCheckForm.pallyndromeStr.$error.pallyndromeResult}}</span>
+								<div style="width: 200px" class="{{pallyndromeValidityClass}}" ng-show="pallyndromeCheckForm.pallyndromeStr.$error.pallyndromeResult">{{pallyndromeCheckForm.pallyndromeStr.$error.pallyndromeResult}}</div>
 							</div>
 						</div>
 						<div class="form-group">
@@ -26,7 +26,7 @@
 						</div>
 					</form>
 				</td>
-				<td class="col-md-4">
+				<td class="col-md-4" style="vertical-align: top">
 					<table class="table">
 						<tbody>
 						<tr>
@@ -37,7 +37,7 @@
 						</tr>
 						</tbody></table>
 				</td>
-				<td class="col-md-4">
+				<td class="col-md-4" style="vertical-align: top">
 					<div ng-if="hasPallyndromeDetails">
 					<table class="table">
 						<tbody><tr>

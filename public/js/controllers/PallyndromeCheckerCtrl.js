@@ -13,11 +13,14 @@ angular.module('PallyndromeCheckerCtrl', []).controller('PallyndromeCheckerContr
 					if (response.data.pallyndrome === true) {
 						$scope.pallyndromeCheckForm.$setValidity('pallyndromeStr', true, $scope.pallyndromeCheckForm);
 						serverMessage.assign($scope, 'Valid pallyndrome');
+						$scope.pallyndromeValidityClass = 'pallyndromeValidityClassGreen';
 					}
 					else {
 						$scope.pallyndromeCheckForm.$setValidity('pallyndromeStr', false, $scope.pallyndromeCheckForm);
 						serverMessage.assign($scope, 'Not a pallyndrome');
+						$scope.pallyndromeValidityClass = 'pallyndromeValidityClassRed';
 					}
+
 
 					return PallyndromeChecker.getPallyndromes();
 				}

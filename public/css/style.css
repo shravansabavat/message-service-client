@@ -1,1 +1,9 @@
 body { padding-top:30px; }
+
+.pallyndromeValidityClassRed {
+    color: red
+}
+
+.pallyndromeValidityClassGreen {
+    color: green
+}
