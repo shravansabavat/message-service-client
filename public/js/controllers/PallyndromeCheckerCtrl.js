@@ -41,4 +41,27 @@ angular.module('PallyndromeCheckerCtrl', []).controller('PallyndromeCheckerContr
 		});
 	}
 
+	$scope.deletePallyndrome = function (pallyndromeStr) {
+		PallyndromeChecker.deletePallyndrome(pallyndromeStr).then(function(deleted) {
+			$scope.hasPallyndromeDetails = false;
+			console.log(deleted);
+
+			if (deleted) {
+				$scope.hasDeleted = true;
+				$scope.deletedMessage = ' Successfully deleted message '  + pallyndromeStr;
+			} else {
+				$scope.deletedMessage = 'There was a problem in deleting the message ' + pallyndromeStr;
+			}
+
+			return PallyndromeChecker.getPallyndromes();
+		})
+		.then(function (pallyndromes) {
+			console.log(pallyndromes);
+			$scope.pallyndromes = pallyndromes;
+		})
+		.catch(function (err) {
+			console.log(err);
+		})
+	}
+
 });

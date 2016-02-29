@@ -27,15 +27,26 @@
 					</form>
 				</td>
 				<td class="col-md-4" style="vertical-align: top">
-					<table class="table">
-						<tbody>
-						<tr>
-							<th>Pallyndromes</th>
-						</tr>
-						<tr ng-repeat="data in pallyndromes" class="ng-scope">
-							<td class="ng-binding"><a href="#" ng-click="getPallyndromeDetails(data.input)">{{data.input}}</a></td>
-						</tr>
-						</tbody></table>
+					<div class="minimum-height">
+						<table class="table">
+							<tbody>
+							<tr>
+								<th>Pallyndromes</th>
+							</tr>
+							<tr ng-repeat="data in pallyndromes" class="ng-scope">
+								<td class="ng-binding">
+									<a href="#" ng-click="getPallyndromeDetails(data.input)">{{data.input}}</a>
+								</td>
+
+								<td class="ng-binding">
+									<a href="#" ng-click="deletePallyndrome(data.input)">
+										<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</a>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
 				</td>
 				<td class="col-md-4" style="vertical-align: top">
 					<div ng-if="hasPallyndromeDetails">
@@ -53,6 +64,20 @@
 							<td class="ng-binding"><span>Times Checked:</span>{{pallyndromeDetails.pallyndromeCheckedCount}}</td>
 						</tr>
 						</tbody></table>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="col-md-4" style="vertical-align: top">&nbsp;</td>
+				<td class="col-md-4" style="vertical-align: top">
+					<div ng-if="hasDeleted">
+						<table class="table">
+							<tbody>
+							<tr class="ng-scope">
+								<td class="ng-binding"><b>{{deletedMessage}}</b></td>
+							</tr>
+							</tbody>
+						</table>
 					</div>
 				</td>
 			</tr>
