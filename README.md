@@ -1,7 +1,5 @@
 # A simple message posting application
 
-> A simple application which is developed in angular.js running on node server. Application has the ability
-
 ### What is this service for?
 
 A simple application which is developed in angular.js running on node server.
