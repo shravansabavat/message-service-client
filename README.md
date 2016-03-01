@@ -18,10 +18,6 @@ Application has the ability
 
 ![Alt text](sequence_diagrams/post_seq.png?raw=true "Post a message")
 
-* Post a message
-
-![Alt text](sequence_diagrams/post_seq.png?raw=true "Post a message")
-
 * Delete a message
 
 ![Alt text](sequence_diagrams/seq_deleted.png?raw=true "Delete a message")
