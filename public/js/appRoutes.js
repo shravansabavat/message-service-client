@@ -8,9 +8,9 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			controller: 'MainController'
 		})
 
-		.when('/checkPallyndrome', {
-			templateUrl: 'views/pallyndromeChecker.html',
-			controller: 'PallyndromeCheckerController'
+		.when('/messages', {
+			templateUrl: 'views/messages.html',
+			controller: 'MessagesController'
 		})
 
 	$locationProvider.html5Mode(true);

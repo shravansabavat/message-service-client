@@ -1,15 +1,14 @@
 <td style="width: 85%; vertical-align: top;">
 	<div style="padding-top: 10px">
 		<div style="padding-bottom: 30px">
-			A simple application which is developed in angular.js running on node server to find out if
-			a given string is palindrome or not.<br>
-			This application calls a palindrome-service node.js micro service
+			A simple application which is developed in angular.js running on node server to save messages posted by a user of this application.<br>
+			This application calls a message-service micro service (implemented in node.js)
 				- which offers
 					<ul>
-						<li>GET (list palindromes)  		- List existing palindromes</li>
-						<li>GET (details of a palindrome) 	- get details of the palindrome.</li>
-						<li>Delete  						- delete a palindrome.</li>
-						<li>POST 							- Check if a given string is palindrome, if yes then store it.</li>
+						<li>GET (list messages)  		- List existing messages</li>
+						<li>GET (details of a message) 	- get details of the message.</li>
+						<li>Delete  						- delete a message.</li>
+						<li>POST 							- save a message.</li>
 					</ul>
 
 		</div>
@@ -21,12 +20,12 @@
 				</div>
 				<div class="panel-body">
 					<ul>
-						<li>Click on the Check palindrome tab opens a new form to input a string</li>
-						<li>On Check palindrome form submission, validates the string on the micro service, stores
-							(if valid) into a valid list of palindromes and updates the list on the <b>Check palindrome</b> page</li>
-						<li>Click any palindrome in the list of palindromes to see the details</li>
-						<li>Details include palindrome text, latest date it is checked, and number of times it is checked</li>
-						<li>Click on 'X' to delete a palindrome from the list.</li>
+						<li>Click on the <b>Messages</b> tab opens a new form to input a string</li>
+						<li>On form submission, sends the string to the micro service, stores into a list of messages and updates the list on the
+							<b>Messages</b> page</li>
+						<li>Click any message in the list of messages to see the details</li>
+						<li>Details include message text, date it is posted, and displays if it is a palindrome</li>
+						<li>Click on 'X' to delete a message from the list.</li>
 					</ul>
 				</div>
 			</div>

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<base href="/">
 
-	<title>Palindrome Checker</title>
+	<title>Simple message posting application</title>
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
@@ -17,19 +17,19 @@
 	<!-- ANGULAR CUSTOM -->
 	<script src="js/controllers/MainCtrl.js"></script>
 
-	<script src="js/controllers/PallyndromeCheckerCtrl.js"></script>
-	<script src="js/services/PallyndromeCheckerService.js"></script>
+	<script src="js/controllers/MessagesCtrl.js"></script>
+	<script src="js/services/MessagesService.js"></script>
 
 	<script src="js/appRoutes.js"></script>
 	<script src="js/app.js"></script>
 </head>
-<body ng-app="pallyndromeApp" ng-controller="MainController">
+<body ng-app="messagesApp" ng-controller="MainController">
 <header class="navbar navbar-static-top" id="top" role="banner">
 
 	<div class="container">
 		<header class="navbar navbar-default navbar-fixed-top">
 			<div class="navbar-inner">
-				<h2 style="text-align: center">Palindrome Checker</h2>
+				<h2 style="text-align: center">Simple message posting application</h2>
 			</div>
 		</header>
 		<div class="header-placeholder"></div>
@@ -44,7 +44,7 @@
 				<td style="width: 15%; vertical-align: top;padding-right: 12px;">
 					<div class="list-group">
 						<a href="/" class="list-group-item active">Home</a>
-						<a href="/checkPallyndrome" class="list-group-item">Check Palindrome</a>
+						<a href="/messages" class="list-group-item">Messages</a>
 					</div>
 				</td>
 				<td>

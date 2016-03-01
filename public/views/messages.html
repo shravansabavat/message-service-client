@@ -1,8 +1,7 @@
 <td style="width: 85%; vertical-align: top;">
 	<div>
-		A simple application to submit the input strings to check if it is a palindrome or not.
-		If it is a valid palindrome, it gets added to the list on the right, and the list/palindromes are persisted at the server.
-
+		A simple application post messages using a micro service at the back end.<br>
+		Check to see if the message is palindrome by clicking on the message from the list.
 	</div>
 	<div style="padding-bottom: 50px;padding-top: 10px;">
 		<table style="width: 100%">
@@ -13,11 +12,11 @@
 			</tr>
 			<tr>
 				<td class="col-md-4" style="vertical-align: top">
-					<form name="pallyndromeCheckForm" class="form-horizontal ng-pristine ng-invalid ng-invalid-required" role="form" ng-submit="checkPallyndrome()">
+					<form name="pallyndromeCheckForm" class="form-horizontal ng-pristine ng-invalid ng-invalid-required" role="form" ng-submit="saveMessage()">
 						<div class="form-group">
 							<div class="col-md-5">
-								<input placeholder="Input any string" type="text" style="width:300px" class="form-control ng-pristine ng-invalid ng-invalid-required" name="pallyndromeStr" ng-model="pallyndromeStr" required="">
-								<div style="width: 200px;font-size: 15px;font-weight: 800;" class="{{pallyndromeValidityClass}}" ng-show="pallyndromeCheckForm.pallyndromeStr.$error.pallyndromeResult">{{pallyndromeCheckForm.pallyndromeStr.$error.pallyndromeResult}}</div>
+								<input placeholder="Input any string" type="text" style="width:300px" class="form-control ng-pristine ng-invalid ng-invalid-required" name="messageInput" ng-model="messageInput" required="">
+								<div style="width: 200px;font-size: 15px;font-weight: 800;" class="{{pallyndromeValidityClass}}" ng-show="pallyndromeCheckForm.messageInput.$error.pallyndromeResult">{{pallyndromeCheckForm.messageInput.$error.pallyndromeResult}}</div>
 							</div>
 						</div>
 						<div class="form-group">
@@ -32,15 +31,15 @@
 						<table class="table">
 							<tbody>
 							<tr>
-								<th>Palindromes List</th>
+								<th>Messages</th>
 							</tr>
-							<tr ng-repeat="data in pallyndromes" class="ng-scope">
+							<tr ng-repeat="data in messages" class="ng-scope">
 								<td class="ng-binding">
-									<a href="#" ng-click="getPallyndromeDetails(data.input)">{{data.input}}</a>
+									<a href="#" ng-click="getMessageDetails(data.input)">{{data.input}}</a>
 								</td>
 
 								<td class="ng-binding">
-									<a href="#" ng-click="deletePallyndrome(data.input)">
+									<a href="#" ng-click="deleteMessage(data.input)">
 										<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 									</a>
 								</td>
@@ -53,16 +52,16 @@
 					<div ng-if="hasPallyndromeDetails">
 					<table class="table">
 						<tbody><tr>
-							<th>Palindrome Details</th>
+							<th>Message Details</th>
 						</tr>
 						<tr class="ng-scope">
-							<td class="ng-binding"><span>Palindrome:</span><span class="pallindromeDetailsText">{{pallyndromeDetails.input}}</span></td>
+							<td class="ng-binding"><span>Message:</span><span class="pallindromeDetailsText">{{pallyndromeDetails.input}}</span></td>
 						</tr>
 						<tr class="ng-scope">
-							<td class="ng-binding"><span>Date checked:</span><span class="pallindromeDetailsText">{{pallyndromeDetails.date}}</span></td>
+							<td class="ng-binding"><span>Date posted:</span><span class="pallindromeDetailsText">{{pallyndromeDetails.date}}</span></td>
 						</tr>
 						<tr class="ng-scope">
-							<td class="ng-binding"><span>Times Checked:</span><span class="pallindromeDetailsText">{{pallyndromeDetails.pallyndromeCheckedCount}}</span></td>
+							<td class="ng-binding"><span>Palindrome:</span><span class="pallindromeDetailsText">{{pallyndromeDetails.palindrome}}</span></td>
 						</tr>
 						</tbody></table>
 					</div>

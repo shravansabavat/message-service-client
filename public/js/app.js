@@ -1,7 +1,7 @@
-angular.module('pallyndromeApp', [
+angular.module('messagesApp', [
     'ngRoute',
     'appRoutes',
     'MainCtrl',
-    'PallyndromeCheckerCtrl',
-    'PallyndromeCheckerService'
+    'MessagesCtrl',
+    'MessagesService'
 ]);
