@@ -11,8 +11,6 @@ Application has the ability
 * to get the details of a message
 * to delete a message
 
-## Architecture
-
 ## Sequence Diagrams
 * Post a message
 
