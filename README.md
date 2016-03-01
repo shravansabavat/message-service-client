@@ -18,6 +18,22 @@ Application has the ability
 
 ![Alt text](sequence_diagrams/post_seq.png?raw=true "Post a message")
 
+* Post a message
+
+![Alt text](sequence_diagrams/post_seq.png?raw=true "Post a message")
+
+* Delete a message
+
+![Alt text](sequence_diagrams/seq_deleted.png?raw=true "Delete a message")
+
+* Get a message
+
+![Alt text](sequence_diagrams/seq_get.png?raw=true "Get a message")
+
+* List messages
+
+![Alt text](sequence_diagrams/seq_list.png?raw=true "List messages")
+
 ## Installation
 1. Clone the repository
 2. Install npm modules: `npm install`
