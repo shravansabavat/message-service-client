@@ -14,6 +14,9 @@ Application has the ability
 ## Architecture
 
 ## Sequence Diagrams
+* Post a message
+
+![Alt text](sequence_diagrams/post_seq.png?raw=true "Post a message")
 
 ## Installation
 1. Clone the repository
