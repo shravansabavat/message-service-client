@@ -6,10 +6,10 @@
 
 A simple application which is developed in angular.js running on node server.
 Application has the ability
-    * to post messages
-    * to list messages that have been posted till date.
-    * to get the details of a message
-    * to delete a message
+* to post messages
+* to list messages that have been posted till date.
+* to get the details of a message
+* to delete a message
 
 ## Architecture
 
