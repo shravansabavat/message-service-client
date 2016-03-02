@@ -1,4 +1,4 @@
-angular.module('MessagesCtrl', []).controller('MessagesController', function(MessagesService, $scope, $parse) {
+angular.module('MessagesCtrl', []).controller('MessagesController', function(MessagesService, $scope, $parse, $timeout) {
 
 	MessagesService.getMessages().then(function(messages) {
 		$scope.messages = messages;
@@ -21,6 +21,9 @@ angular.module('MessagesCtrl', []).controller('MessagesController', function(Mes
 						$scope.pallyndromeValidityClass = 'pallyndromeValidityClassRed';
 					}
 
+					$timeout(function() {
+						serverMessage.assign($scope, '');
+					}, 3000);
 
 					return MessagesService.getMessages();
 				}
@@ -52,6 +55,10 @@ angular.module('MessagesCtrl', []).controller('MessagesController', function(Mes
 			} else {
 				$scope.deletedMessage = 'There was a problem in deleting the message ' + messageInput;
 			}
+
+				$timeout(function() {
+					$scope.deletedMessage = '';
+				}, 3000);
 
 			return MessagesService.getMessages();
 		})
