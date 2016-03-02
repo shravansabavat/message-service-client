@@ -22,6 +22,7 @@ angular.module('MessagesCtrl', []).controller('MessagesController', function(Mes
 					}
 
 					$timeout(function() {
+						$scope.messageInput = '';
 						serverMessage.assign($scope, '');
 					}, 3000);
 
