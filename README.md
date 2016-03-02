@@ -12,19 +12,22 @@ Application has the ability
 ## Sequence Diagrams
 * Post a message
 
-![Alt text](sequence_diagrams/post_seq.png?raw=true "Post a message")
+![Alt text](images/post_seq.png?raw=true "Post a message")
 
 * Delete a message
 
-![Alt text](sequence_diagrams/seq_deleted.png?raw=true "Delete a message")
+![Alt text](images/seq_deleted.png?raw=true "Delete a message")
 
 * Get a message
 
-![Alt text](sequence_diagrams/seq_get.png?raw=true "Get a message")
+![Alt text](images/seq_get.png?raw=true "Get a message")
 
 * List messages
 
-![Alt text](sequence_diagrams/seq_list.png?raw=true "List messages")
+![Alt text](images/seq_list.png?raw=true "List messages")
+
+## Architecture
+![Alt text](images/architecture.png?raw=true "Architecture")
 
 ## Installation
 1. Clone the repository
