@@ -8,6 +8,10 @@ Application has the ability
 * to list messages that have been posted till date.
 * to get the details of a message
 * to delete a message
+* 
+
+##Public access
+* Application has been deployed on amazon ec2 instance and can be accessed at http://52.32.44.47:8080/
 
 ## Sequence Diagrams
 * Post a message
