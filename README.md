@@ -1,7 +1,5 @@
 # A simple message posting application
 
-> A simple application which is developed in angular.js running on node server. Application has the ability
-
 ### What is this service for?
 
 A simple application which is developed in angular.js running on node server.
@@ -11,9 +9,22 @@ Application has the ability
 * to get the details of a message
 * to delete a message
 
-## Architecture
-
 ## Sequence Diagrams
+* Post a message
+
+![Alt text](sequence_diagrams/post_seq.png?raw=true "Post a message")
+
+* Delete a message
+
+![Alt text](sequence_diagrams/seq_deleted.png?raw=true "Delete a message")
+
+* Get a message
+
+![Alt text](sequence_diagrams/seq_get.png?raw=true "Get a message")
+
+* List messages
+
+![Alt text](sequence_diagrams/seq_list.png?raw=true "List messages")
 
 ## Installation
 1. Clone the repository
