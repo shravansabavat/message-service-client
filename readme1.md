@@ -1,14 +1,10 @@
 # Code quality tools installation
 
-## Getting Started
-
 ## Check style plugin
 
 ### Installation
-> Follow the instructions in the below link to install the plugin
-
-* URL
-  * http://localhost:8081/message/list
+1. Follow the instructions in the below link to install the plugin
+  *[Checkstyle installation](http://www.concretepage.com/ide/eclipse/install-checkstyle-plugin-in-eclipse)
 * Method
   * GET
 * Headers
