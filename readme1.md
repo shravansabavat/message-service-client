@@ -7,7 +7,7 @@
 3. Follow the instruction here to [for setting up the checkstyle against a project](http://eclipse-cs.sourceforge.net/#!/project-setup)
 
 #### Activating check style plugin for individual modules
-> Currently check style plugin is activated only for `bbmuser-consumer-test-suite` module which is under `bbm-consumer/service-catalogs/bbmuser/bbmuser-consumer`. In order to activate the plugin for other module, all you need to do is add the below property in the pom.xml `<checkStylePhase>validate</checkStylePhase>`
+> Currently check style plugin is activated only for `bbmuser-consumer-test-suite` module which is under `bbm-consumer/service-catalogs/bbmuser/bbmuser-consumer`. In order to activate the plugin for other module, all you need to do is add the below property in the pom.xml ```<checkStylePhase>validate</checkStylePhase>```
 
 #### Using checkstyle plugin through a maven profile
 > We have incorporated the check style plugin in BUS using a profile `code-quality-check-dev` defined in pom.xml of `bbm-consumer/service-catalogs/bbmuser`. 
